@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 const html = 
 (
   <>
-    <img src="./react-logo.png" width={'100px'}/>
+    <img src="./react-logo.png" width="40px"/>
     <h1>Func facts about React</h1>
     <ul>
       <li>Was first released in 2013</li>
