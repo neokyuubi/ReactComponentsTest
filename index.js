@@ -1,15 +1,42 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-function FirstComposabel()
+function Header()
 {
   return (
     <>
       <header>
-        <nav>
-          <img src="./react-logo.png" width="40px"/>
+        <nav className="nav">
+          <img src="./react-logo.png" className="nav-logo"/>
+          <ul className="nav-items">
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
         </nav>
       </header>
+    </>
+  );
+}
+
+function Footer() 
+{
+  return (
+    <>
+      <footer>
+        <small>
+          © 2023 Neokyuubi development 
+        </small>
+      </footer>
+    </>
+  );  
+}
+
+function FirstComposabel()
+{
+  return (
+    <>
+      <Header />
       <h1>Func facts about React</h1>
       <ul>
         <li>Was first released in 2013</li>
@@ -18,11 +45,7 @@ function FirstComposabel()
         <li>Is maintained by Facebook</li>
         <li>Neokyuubi is starting to use it</li>
       </ul>
-      <footer>
-        <small>
-          © 2023 Neokyuubi development 
-        </small>
-      </footer>
+      <Footer />
     </>
   );
 }

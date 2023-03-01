@@ -2,3 +2,44 @@ html, body {
     margin: 0;
     padding: 10px;
 }
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#root
+{
+    width: 100%;
+    max-width: 600px;
+}
+
+.nav-items
+{
+    list-style: none;
+    display: flex;
+}
+
+.nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items > li 
+{
+    padding: 10px;
+}
+
+.nav-logo
+{
+    width: 40px;
+}
+
+footer
+{
+    background-color: grey;
+}
