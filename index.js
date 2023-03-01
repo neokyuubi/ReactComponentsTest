@@ -4,7 +4,11 @@ import ReactDOM from "react-dom";
 const html = 
 (
   <>
-    <img src="./react-logo.png" width="40px"/>
+    <header>
+      <nav>
+      <img src="./react-logo.png" width="40px"/>
+      </nav>
+    </header>
     <h1>Func facts about React</h1>
     <ul>
       <li>Was first released in 2013</li>
@@ -13,6 +17,9 @@ const html =
       <li>Is maintained by Facebook</li>
       <li>Neokyuubi is starting to use it</li>
     </ul>
+    <footer>
+      © 2023 Neokyuubi development
+    </footer>
   </>
 );
 
