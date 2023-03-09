@@ -1,53 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Header from "./Header";
+import Footer from "./Footer";
+import MainContent from "./MainContent";
 
-function Header()
+function Page()
 {
   return (
-    <>
-      <header>
-        <nav className="nav">
-          <img src="./react-logo.png" className="nav-logo"/>
-          <ul className="nav-items">
-            <li>Pricing</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
-      </header>
-    </>
+  <>
+    <Header />
+    <MainContent/>
+    <Footer/>
+  </>
   );
 }
 
-function Footer() 
-{
-  return (
-    <>
-      <footer>
-        <small>
-          © 2023 Neokyuubi development 
-        </small>
-      </footer>
-    </>
-  );  
-}
-
-function FirstComposabel()
-{
-  return (
-    <>
-      <Header />
-      <h1>Func facts about React</h1>
-      <ul>
-        <li>Was first released in 2013</li>
-        <li>Was originally created by Jordan Walke</li>
-        <li>Has well over 100K stars on Github</li>
-        <li>Is maintained by Facebook</li>
-        <li>Neokyuubi is starting to use it</li>
-      </ul>
-      <Footer />
-    </>
-  );
-}
-
-ReactDOM.render(<FirstComposabel/>, document.getElementById("root"));
+ReactDOM.render(<Page/>, document.getElementById("root"));
